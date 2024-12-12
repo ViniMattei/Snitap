@@ -108,3 +108,27 @@ section.gallery {
     transform: translateY(100%);
   }
 }
+
+@media (max-width: 768px) {
+  section.gallery {
+    & span {
+      font-size: 0.75rem;
+    }
+
+    & h2 {
+      font-size: 1.5rem;
+    }
+    & .content {
+      grid-template-areas:
+        "A A A"
+        "B B B"
+        "C C C"
+        "D D D";
+    }
+
+    & figure {
+      width: 19.5rem;
+      height: 16rem;
+    }
+  }
+}

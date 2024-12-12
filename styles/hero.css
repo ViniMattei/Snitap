@@ -226,3 +226,28 @@ section.hero {
     transform: translateY(-15rem);
   }
 }
+
+@media (max-width: 768px) {
+  section.hero {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+
+    & h1 {
+      font-size: 2rem;
+    }
+
+    & .buttons {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    & > div:nth-child(2) {
+      height: 18.46rem;
+    }
+
+    & h1 div {
+      height: 2.5rem;
+    }
+  }
+}
